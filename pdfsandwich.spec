@@ -3,7 +3,7 @@
 Summary:	A tool to make sandwich OCR pdf files
 Name:		pdfsandwich
 Version:	0.1.7
-Release:	1
+Release:	2
 Group:		Graphics
 License:	GPLv2
 Url:		http://www.tobias-elze.de/pdfsandwich/
@@ -11,12 +11,13 @@ Source0:	http://sourceforge.net/projects/pdfsandwich/files/%{name}-%{version}.ta
 
 BuildRequires:	ocaml-compiler
 
+Requires:	ghostscript
+Requires:	imagemagick
 Requires:	unpaper
-Suggests:	tesseract >= 3.03
+Requires:	tesseract
 #Optional:	exact-image
 
 %description
-# from the homepage
 pdfsandwich generates "sandwich" OCR pdf files, i.e. pdf files which contain
 only images (but no editable text) will be processed by optical character
 recognition (OCR) and the text will be added to each page invisibly "behind"
