@@ -6,7 +6,7 @@ Version:	0.1.7
 Release:	2
 Group:		Graphics
 License:	GPLv2
-Url:		http://www.tobias-elze.de/pdfsandwich/
+Url:		https://www.tobias-elze.de/pdfsandwich/
 Source0:	http://sourceforge.net/projects/pdfsandwich/files/%{name}-%{version}.tar.bz2
 
 BuildRequires:	ocaml-compiler
